@@ -1,4 +1,6 @@
 package uk.theeu.pubgolflad.data
 
-class PubGolfGame (val rounds: MutableList<PubGolfRound> = mutableListOf()) {
+import java.util.*
+
+class PubGolfGame (val createdAt: Date, var lastUpdated: Date, val rounds: MutableList<PubGolfRound> = mutableListOf()) {
 }

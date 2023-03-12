@@ -2,4 +2,6 @@
     <string name="app_name">PubGolfLad</string>
     <string name="main_page_title">PubGolfLad</string>
     <string name="top_bar_settings_string">Settings</string>
+    <string name="edit_game_button_text">Edit the Game.</string>
+    <string name="play_game_button_text">Play Game.</string>
 </resources>

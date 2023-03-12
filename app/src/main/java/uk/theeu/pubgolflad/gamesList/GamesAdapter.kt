@@ -15,12 +15,12 @@ class GamesAdapter(private val games: PubGolfGameRepository): RecyclerView.Adapt
             gametitle = view.findViewById(R.id.game_title)
         }
     }
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): GamesAdapter.ViewHolder {
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val view = LayoutInflater.from(parent.context).inflate(R.layout.games_row_item, parent, false)
         return ViewHolder(view)
     }
 
-    override fun onBindViewHolder(holder: GamesAdapter.ViewHolder, position: Int) {
+    override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         holder.gametitle.text = games.games.getOrNull(position)?.title ?: "No Title!"
     }
 

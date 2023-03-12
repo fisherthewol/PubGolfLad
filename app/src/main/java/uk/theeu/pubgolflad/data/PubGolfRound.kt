@@ -7,8 +7,8 @@ import androidx.room.PrimaryKey
 @Entity
 data class PubGolfRound(
     @PrimaryKey val uid: Int,
-    @ColumnInfo(name= "pub") val pub: String,
-    @ColumnInfo(name="drink") val drink: String,
-    @ColumnInfo(name="par") val par: Float,
-    @ColumnInfo(name="score") var score: Float?
+    val pub: String,
+    val drink: String,
+    val par: Float,
+    var score: Float?
 )

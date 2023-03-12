@@ -8,7 +8,7 @@ import java.util.*
 @Entity
 class PubGolfGame (
     @PrimaryKey val uid: Int,
-    @ColumnInfo(name="createdAt") val createdAt: Date,
-    @ColumnInfo(name="lastUpdated") var lastUpdated: Date,
-    @ColumnInfo val title: String,
+    val createdAt: Date,
+    var lastUpdated: Date,
+    val title: String,
 )
